@@ -1,1 +1,106 @@
-hello world
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2C2C29;
+}
+header {
+    height: 100vh;
+    background-image: url('assets/images/heroImage.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@font-face {
+    font-family: 'Literata';
+    src: url('assets/fonts/Literata-Medium.ttf');
+}
+@font-face {
+    font-family: 'Sora';
+    src: url('assets/fonts/Sora-Regular.otf');
+}
+h1 {
+    font-family: 'Literata';
+    font-size: 5em;
+    color: #2C2C29;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Literata';
+    font-size: 2em;
+    color: #2C2C29;
+    line-height: 1;
+}
+
+p {
+    font-family: 'Sora';
+    font-size: 1em;
+    color: #2C2C29;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.nav {
+    position: absolute;
+    top: 20;
+    left: 20;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    padding: 30px;
+    border-radius: 0px 0px 30px 0px;
+    background-color: #B4EDBC;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.navbar {
+    padding: 30px;
+    border-radius: 0px 0px 0px 30px;
+    background-color: #B4EDBC;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.heroText {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 30px;
+    border-radius: 0px 30px 0px 0px;
+    background-color: #FFFEE8;
+}
+
+button {
+    background-color: #FFFEE8;
+    padding: 10px 20px 10px 20px;
+    border: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+button img {
+    margin-right: 10px;
+}
