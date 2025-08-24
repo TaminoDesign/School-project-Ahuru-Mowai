@@ -10,8 +10,10 @@ body {
 header {
     height: 100vh;
     background-image: url('assets/images/heroImage.jpg');
-    background-size: cover;
-    background-position: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @font-face {
@@ -24,7 +26,7 @@ header {
 }
 h1 {
     font-family: 'Literata';
-    font-size: 5em;
+    font-size: 5rem;
     color: #2C2C29;
     line-height: 1;
     text-decoration: none;
@@ -34,19 +36,34 @@ h1 {
 
 h2 {
     font-family: 'Literata';
-    font-size: 2em;
+    font-size: 2.5rem;
     color: #2C2C29;
     line-height: 1;
+}
+
+h3 {
+    font-family: 'Literata';
+    font-size: 1rem;
+    color: #FFFEE8;
+    line-height: 1;
+    font-weight: 400;
 }
 
 p {
     font-family: 'Sora';
-    font-size: 1em;
+    font-size: 1rem;
     color: #2C2C29;
-    line-height: 1;
+    line-height: 1.2;
     text-decoration: none;
 }
 
+a {
+    margin: 0pc;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+}
 .nav {
     position: absolute;
     top: 20;
@@ -87,7 +104,7 @@ p {
     background-color: #FFFEE8;
 }
 
-button {
+.button {
     background-color: #FFFEE8;
     padding: 10px 20px 10px 20px;
     border: 0px;
@@ -100,7 +117,184 @@ button {
     border-radius: 20px;
     text-decoration: none;
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-button img {
+.button img {
     margin-right: 10px;
+    height: 20px;
+}
+
+.button .buttonText {
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0;
+}
+
+.button:hover {
+    transform:scale(1.02);
+    box-shadow: 0px 0px 20px rgb(255, 254, 232)
+}
+
+.sectionWhoWeAre {
+    display: flex;
+    flex-direction: row;
+}
+
+.sectionWhoWeAreLeft {
+    width: 60%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    background-image: url('assets/images/birdbackground.png');
+    background-position: bottom left;
+}
+
+.sectionWhoWeAreRight {
+    width: 40%;
+}
+
+.sectionWhoWeAreRight img {
+    width: 100%;
+    height: auto;
+    border-radius: 0px 0px 0px 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sectionWhoWeAreRight img:hover {
+    transform:scale(1.001);
+    box-shadow: 0px 0px 200px #fffee83e;
+}
+
+.sectionWhoWeAreLeft p {
+    padding-top: 10px;
+    color: #FFFEE8;
+}
+
+.sectionPages {
+    height: 100vh;
+    overflow: visible;
+}
+.sectionPages h3 {
+    margin: 40px;
+    height: fit-content;
+}
+
+.selectPages {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 85%;
+}
+
+.Boxes {
+    width: 33.3%;
+}
+
+.Boxes a {
+    width: 100%;
+    height: 100%;
+}
+
+.goToWildlifePage {
+    cursor: url('assets/images/cursorGreen.svg'), auto;
+    background-color: #FFFEE8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.goToWildlifePage:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 35px #FFFEE8;
+}
+
+.goToPlantsPage {
+    cursor: url('assets/images/cursorWhite.svg'), auto;
+    background-color: #B4EDBC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 100%;
+    padding-top: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.goToPlantsPage:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 35px #B4EDBC;
+}
+
+.goToVisitPage {
+    cursor: url('assets/images/cursorGreen.svg'), auto;
+    background-color: #FFFEE8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 40px;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.goToVisitPage:hover {
+    transform: translateY(-5px);
+    box-shadow: -2px -2px 35px #FFFEE8;
+}
+
+.goToWildlifePage img, .goToPlantsPage img {
+    width: 100%;
+}
+
+.goToVisitPage img {
+    width: 70%;
+}
+
+footer {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+}
+
+.footerleft {
+    width: 100%;
+    padding: 40px 0px 40px 40px;
+}
+
+.footerRight {
+    width: fit-content;
+}
+
+.footerleft p {
+    padding-bottom: 20px;
+    color: #FFFEE8;
+}
+
+.footerleft h1 {
+    text-align: justify;
+    color: #FFFEE8;
+}
+
+.footerRight p {
+    text-align: right;
+    color: #FFFEE8;
+    padding: 40px;
+}
+
+.footerRight iframe {
+    height: 400px;
+    width: auto;
+    margin-right: 40px;
 }
