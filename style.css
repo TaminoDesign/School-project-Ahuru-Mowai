@@ -10,10 +10,22 @@ body {
 header {
     height: 100vh;
     background-image: url('assets/images/heroImage.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerWildlife {
+    background-image: url('assets/images/Robin.jpg');
+}
+
+.headerPlants {
+    background-image: url('assets/images/plantsBackground.jpg');
+}
+
+.headerVisit {
+    background-image: url('assets/images/VisitBackground.png');
 }
 
 @font-face {
@@ -133,6 +145,10 @@ a {
 .button:hover {
     transform:scale(1.02);
     box-shadow: 0px 0px 20px rgb(255, 254, 232)
+}
+
+.active {
+    background-color: #B4EDBC;
 }
 
 .sectionWhoWeAre {
@@ -297,4 +313,88 @@ footer {
     height: 400px;
     width: auto;
     margin-right: 40px;
+}
+
+.sectionWildlife {
+    display: flex;
+    flex-direction: row;
+}
+
+.sectionWildlifeLeft {
+    width: 60%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.sectionWildlifeRight {
+    width: 40%;
+}
+
+.sectionWildlifeRight img {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    transition: transform 0.3s ease;
+}
+
+.sectionWildlifeRight img:hover {
+    transform:scale(1.1);
+}
+
+.sectionWildlifeLeft p {
+    padding-top: 10px;
+    color: #FFFEE8;
+}
+
+/* Walks tabs */
+#details > div {
+    background-color: rgba(0, 0, 0, .5);
+    border: 1px solid #505160;
+    padding: 20px;
+    display: none;
+}
+
+#details label {
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+    padding: 6px 25px;
+    border: 1px solid #68829E;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    float: left;
+    background-color: #505160;
+    transition: background-color .5s;
+}
+
+#details panel::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#details label:hover {
+    background-color: rgba(255, 255, 255, .6);
+    color: black;
+}
+
+#details input {
+    display: none;
+}
+
+/* This shows the containt whrn a user clicks on a tab */
+#details > input[id="tab1"]:checked ~ panel label[for="tab1"],
+#details > input[id="tab2"]:checked ~ panel label[for="tab2"],
+#details > input[id="tab3"]:checked ~ panel label[for="tab3"] {
+    background-color: #68829E;
+    color: white;
+}
+
+#details > input[id="tab1"]:checked ~ div[id="detail1"],
+#details > input[id="tab2"]:checked ~ div[id="detail2"],
+#details > input[id="tab3"]:checked ~ div[id="detail3"] {
+    display: block;
 }
