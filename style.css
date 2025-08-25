@@ -51,6 +51,7 @@ h2 {
     font-size: 2.5rem;
     color: #2C2C29;
     line-height: 1;
+    font-weight: 400;
 }
 
 h3 {
@@ -85,6 +86,11 @@ a {
     align-items: start;
     justify-content: space-between;
     width: 100%;
+}
+
+section {
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -506,5 +512,249 @@ footer {
 }
 
 .robin img, .tuiLeft img {
+    width: 100%;
+}
+
+/* Walks tabs */
+#details3 > div {
+    padding: 20px;
+    display: none;
+}
+
+#details3 label {
+    cursor: pointer;
+    display: inline-block;
+    color: #FFFEE8;
+    padding: 10px 25px;
+    float: left;
+    width: 33.3333%;
+    background-color: #2C2C29;
+    transition: background-color .5s;
+    font-family: 'Sora';
+}
+
+#details3 panel::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#details3 label:hover {
+    background-color: #FFFEE8;
+    color: #2C2C29;
+}
+
+#details3 input {
+    display: none;
+}
+
+#details3 > input[id="tab7"]:checked ~ panel label[for="tab7"],
+#details3 > input[id="tab8"]:checked ~ panel label[for="tab8"],
+#details3 > input[id="tab9"]:checked ~ panel label[for="tab9"] {
+    background-color: #FFFEE8;
+    color: #2C2C29;
+}
+
+#details3 > input[id="tab7"]:checked ~ div[id="detail7"],
+#details3 > input[id="tab8"]:checked ~ div[id="detail8"],
+#details3 > input[id="tab9"]:checked ~ div[id="detail9"] {
+    display: block;
+}
+
+.birds2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+}
+
+.tuatara {
+    width: 100%;
+    height: auto;
+    background-color: #FFFEE8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0px 30px 0px 30px;
+}
+
+.tuataraLeft {
+    padding: 40px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tuataraRight {
+    height: 100%;
+    width: 50%;
+    padding: 40px 40px 0px 0px;
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+    justify-content: space-between;
+}
+
+.tuatara img {
+    width: 100%;
+}
+
+/* Walks tabs */
+#details4 > div {
+    padding: 20px;
+    display: none;
+}
+
+#details4 label {
+    cursor: pointer;
+    display: inline-block;
+    color: #FFFEE8;
+    padding: 10px 25px;
+    float: left;
+    width: 33.3333%;
+    background-color: #2C2C29;
+    transition: background-color .5s;
+    font-family: 'Sora';
+}
+
+#details4 panel::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#details4 label:hover {
+    background-color: rgba(255, 255, 255, .6);
+    color: #2C2C29;
+}
+
+#details4 input {
+    display: none;
+}
+
+#details4 > input[id="tab10"]:checked ~ panel label[for="tab10"],
+#details4 > input[id="tab11"]:checked ~ panel label[for="tab11"],
+#details4 > input[id="tab12"]:checked ~ panel label[for="tab12"] {
+    background-color: #FFFEE8;
+    color: #2C2C29;
+}
+
+#details4 > input[id="tab10"]:checked ~ div[id="detail10"],
+#details4 > input[id="tab11"]:checked ~ div[id="detail11"],
+#details4 > input[id="tab12"]:checked ~ div[id="detail12"] {
+    display: block;
+}
+
+/* Walks tabs */
+#details5 > div {
+    padding: 20px;
+    display: none;
+}
+
+#details5 label {
+    cursor: pointer;
+    display: inline-block;
+    color: #FFFEE8;
+    padding: 10px 25px;
+    float: left;
+    width: 33.3333%;
+    background-color: #2C2C29;
+    transition: background-color .5s;
+    font-family: 'Sora';
+}
+
+#details5 panel::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#details5 label:hover {
+    background-color: rgba(255, 255, 255, .6);
+    color: #2C2C29;
+}
+
+#details5 input {
+    display: none;
+}
+
+#details5 > input[id="tab13"]:checked ~ panel label[for="tab13"],
+#details5 > input[id="tab14"]:checked ~ panel label[for="tab14"],
+#details5 > input[id="tab15"]:checked ~ panel label[for="tab15"] {
+    background-color: #FFFEE8;
+    color: #2C2C29;
+}
+
+#details5 > input[id="tab13"]:checked ~ div[id="detail13"],
+#details5 > input[id="tab14"]:checked ~ div[id="detail14"],
+#details5 > input[id="tab15"]:checked ~ div[id="detail15"] {
+    display: block;
+}
+
+.Birds3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+}
+
+.ruru {
+    width: 33.3%;
+    height: fit-content;
+    background-color: #FFFEE8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0px 30px 0px 30px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ruru p, h3 {
+    color: #2C2C29;
+}
+
+.hihi {
+    margin-right: 20px;
+    width: 66%;
+    height: auto;
+    background-color: #B4EDBC;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.hihiLeft {
+    padding: 40px 0px 40px 40px;
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.hihiRight {
+    height: 100%;
+    width: 45%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+    justify-content: space-between;
+}
+
+.ruru img, .hihiRight img {
     width: 100%;
 }
