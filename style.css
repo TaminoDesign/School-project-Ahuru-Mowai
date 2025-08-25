@@ -116,7 +116,7 @@ a {
     background-color: #FFFEE8;
 }
 
-.button {
+.button, .iconButton {
     background-color: #FFFEE8;
     padding: 10px 20px 10px 20px;
     border: 0px;
@@ -136,13 +136,17 @@ a {
     height: 20px;
 }
 
+.iconButton img {
+    height: 20px;
+}
+
 .button .buttonText {
     font-size: 1rem;
     text-decoration: none;
     margin: 0;
 }
 
-.button:hover {
+.button:hover, .iconButton:hover {
     transform:scale(1.02);
     box-shadow: 0px 0px 20px rgb(255, 254, 232)
 }
@@ -351,8 +355,6 @@ footer {
 
 /* Walks tabs */
 #details > div {
-    background-color: rgba(0, 0, 0, .5);
-    border: 1px solid #505160;
     padding: 20px;
     display: none;
 }
@@ -360,14 +362,13 @@ footer {
 #details label {
     cursor: pointer;
     display: inline-block;
-    color: white;
-    padding: 6px 25px;
-    border: 1px solid #68829E;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    color: #FFFEE8;
+    padding: 10px 25px;
     float: left;
-    background-color: #505160;
+    width: 33.3333%;
+    background-color: #2C2C29;
     transition: background-color .5s;
+    font-family: 'Sora';
 }
 
 #details panel::after {
@@ -378,7 +379,7 @@ footer {
 
 #details label:hover {
     background-color: rgba(255, 255, 255, .6);
-    color: black;
+    color: #2C2C29;
 }
 
 #details input {
@@ -389,12 +390,121 @@ footer {
 #details > input[id="tab1"]:checked ~ panel label[for="tab1"],
 #details > input[id="tab2"]:checked ~ panel label[for="tab2"],
 #details > input[id="tab3"]:checked ~ panel label[for="tab3"] {
-    background-color: #68829E;
-    color: white;
+    background-color: #FFFEE8;
+    color: #2C2C29;
 }
 
 #details > input[id="tab1"]:checked ~ div[id="detail1"],
 #details > input[id="tab2"]:checked ~ div[id="detail2"],
 #details > input[id="tab3"]:checked ~ div[id="detail3"] {
     display: block;
+}
+
+/* Walks tabs */
+#details2 > div {
+    padding: 20px;
+    display: none;
+}
+
+#details2 label {
+    cursor: pointer;
+    display: inline-block;
+    color: #FFFEE8;
+    padding: 10px 25px;
+    float: left;
+    width: 33.3333%;
+    background-color: #2C2C29;
+    transition: background-color .5s;
+    font-family: 'Sora';
+}
+
+#details2 panel::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#details2 label:hover {
+    background-color: rgba(255, 255, 255, .6);
+    color: #2C2C29;
+}
+
+#details2 input {
+    display: none;
+}
+
+#details2 > input[id="tab4"]:checked ~ panel label[for="tab4"],
+#details2 > input[id="tab5"]:checked ~ panel label[for="tab5"],
+#details2 > input[id="tab6"]:checked ~ panel label[for="tab6"] {
+    background-color: #FFFEE8;
+    color: #2C2C29;
+}
+
+#details2 > input[id="tab4"]:checked ~ div[id="detail4"],
+#details2 > input[id="tab5"]:checked ~ div[id="detail5"],
+#details2 > input[id="tab6"]:checked ~ div[id="detail6"] {
+    display: block;
+}
+
+.Birds1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+}
+
+.robin {
+    width: 33.3%;
+    height: fit-content;
+    background-color: #FFFEE8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0px 30px 0px 30px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.robin p, h3 {
+    color: #2C2C29;
+}
+
+.tui {
+    margin-left: 20px;
+    width: 66%;
+    height: auto;
+    background-color: #B4EDBC;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.tuiLeft {
+    padding-top: 40px;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tuiRight {
+    height: 100%;
+    width: 55%;
+    padding: 40px 40px 40px 0px;
+    display: flex;
+    flex-direction: column;
+        align-items: end;
+    justify-content: space-between;
+}
+
+.robin img, .tuiLeft img {
+    width: 100%;
 }
