@@ -173,8 +173,9 @@ section {
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
-    background-image: url('assets/images/birdbackground.png');
-    background-position: bottom left;
+    background-image: url('assets/images/background.png');
+    background-position: center;
+    background-size: cover;
 }
 
 .sectionWhoWeAreRight {
@@ -328,6 +329,9 @@ footer {
 .sectionWildlife {
     display: flex;
     flex-direction: row;
+    background-image: url('assets/images/background.png');
+    background-position: center;
+    background-size: cover;
 }
 
 .sectionWildlifeLeft {
@@ -763,6 +767,9 @@ footer {
     display: flex;
     flex-direction: row;
     height: 70vh;
+    background-image: url('assets/images/background.png');
+    background-position: center;
+    background-size: cover;
 }
 
 .sectionOpenLeft {
@@ -940,4 +947,16 @@ footer {
 
 .walking img {
     height: 30px;
+}
+
+.treeImageBig {
+    width: 100%;
+    padding: 20px;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.treeImageSmall {
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px 30px 0px 0px;
 }
