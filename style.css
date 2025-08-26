@@ -758,3 +758,186 @@ footer {
 .ruru img, .hihiRight img {
     width: 100%;
 }
+
+.sectionOpen {
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+}
+
+.sectionOpenLeft {
+    width: 60%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.sectionOpenRight {
+    width: 40%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    text-align: right;
+}
+
+.sectionOpenLeft h2 {
+    color: #FFFEE8;
+    padding-top: 28%;
+}
+
+.sectionOpenLeft h3 {
+    color: #FFFEE8;
+}
+
+.sectionOpenRight p {
+    color: #FFFEE8;
+    padding-bottom: 10px;
+}
+
+.tours {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+}
+
+.selfTour {
+    width: 33.3%;
+    height: fit-content;
+    background-color: #FFFEE8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0px 30px 0px 30px;
+    margin-right: 20px;
+}
+
+.selfTour p {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+
+.guidedTourRight p {
+    padding-top: 10px;
+}
+
+.guidedTour {
+    margin-left: 20px;
+    width: 66%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items:center;
+    text-align: center;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.guidedTourInfo {
+    width: 100%;
+    height: auto;
+    background-color: #B4EDBC;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.guidedTourLeft {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.guidedTourRight {
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+    justify-content: center;
+}
+
+.guidedTourLeft img {
+    height: 100%;
+}
+
+.selfTour img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.guidedTourText {
+    color: #FFFEE8;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.protect {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.protect h2 {
+    color: #FFFEE8;
+}
+
+.protectTiles {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.footsteps {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 150px;
+    background-color: #FFFEE8;
+    border-radius: 0px 0px 30px 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.footsteps img {
+    height: 30px;
+    width: 30px;
+}
+
+.walking {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 150px;
+    background-color: #FFFEE8;
+    border-radius: 0px 30px 0px 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.walking img {
+    height: 30px;
+}
