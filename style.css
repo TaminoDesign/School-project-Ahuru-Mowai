@@ -243,6 +243,9 @@ section {
     padding-bottom: 40px;
     height: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-image: url("assets/images/BackgroundWhite.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .goToWildlifePage:hover {
@@ -261,6 +264,9 @@ section {
     height: 100%;
     padding-top: 40px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-image: url("assets/images/BackgroundGreen.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .goToPlantsPage:hover {
@@ -279,6 +285,9 @@ section {
     padding-top: 40px;
     height: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-image: url("assets/images/BackgroundWhite.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .goToVisitPage:hover {
@@ -488,6 +497,9 @@ footer {
     margin-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-image: url("assets/images/BackgroundWhite.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .robin p,
@@ -506,6 +518,9 @@ h3 {
     align-items: center;
     text-align: center;
     border-radius: 0 30px 30px 0;
+    background-image: url("assets/images/BackgroundGreen.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .tuiLeft {
@@ -596,6 +611,9 @@ h3 {
     align-items: center;
     text-align: center;
     border-radius: 0 30px 0 30px;
+    background-image: url("assets/images/BackgroundWhite.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .tuataraLeft {
@@ -734,6 +752,9 @@ h3 {
     margin-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-image: url("assets/images/BackgroundWhite.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .ruru p,
@@ -752,6 +773,9 @@ h3 {
     align-items: center;
     text-align: center;
     border-radius: 0 0 30px 30px;
+    background-image: url("assets/images/BackgroundGreen.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .hihiLeft {
@@ -839,6 +863,9 @@ h3 {
     text-align: center;
     border-radius: 0 30px 0 30px;
     margin-right: 20px;
+    background-image: url("assets/images/BackgroundWhite.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .selfTour p {
@@ -871,6 +898,9 @@ h3 {
     align-items: center;
     text-align: center;
     border-radius: 0 30px 30px 0;
+    background-image: url("assets/images/BackgroundGreen.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .guidedTourLeft {
@@ -993,7 +1023,7 @@ h3 {
 
     .sectionWhoWeAre {
         flex-direction: column;
-    } 
+    }
     .sectionWhoWeAreLeft {
         width: 100%;
     }
@@ -1026,49 +1056,55 @@ h3 {
         width: 100%;
     }
 
-    .Birds1, .Birds3 {
+    .Birds1,
+    .Birds3 {
         flex-direction: column;
     }
-    .robin, .tui, .hihi, .ruru {
+    .hihi,
+    .robin,
+    .ruru,
+    .tui {
         width: 100%;
         flex-direction: column;
     }
     .tui {
-            margin-left: 0px;
-            margin-top: 40px;
+        margin-left: 0;
+        margin-top: 40px;
     }
-    .tuiLeft, .tuiRight {
-        width: 100%;
-    } 
+    .tuiLeft,
     .tuiRight {
-        padding: 0px 0px 40px 0px;
+        width: 100%;
     }
-    .hihiLeft, .hihiRight {
+    .tuiRight {
+        padding: 0 0 40px;
+    }
+    .hihiLeft,
+    .hihiRight {
         width: 100%;
     }
     .hihiLeft {
-        padding: 40px 0px 0px 0px;
+        padding: 40px 0 0;
     }
     .hihi {
         margin-bottom: 40px;
     }
     .ruru {
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .birds2 {
-        padding: 0px 40px 0px 40px;
+        padding: 0 40px;
     }
     .tuatara {
         flex-direction: column;
     }
     .tuataraLeft {
         width: 100%;
-        padding: 40px 0px 0px 0px;
+        padding: 40px 0 0;
     }
     .tuataraRight {
         width: 100%;
-        padding: 40px 40px 0px 40px;
+        padding: 40px 40px 0;
     }
     .iconButton {
         display: none;
@@ -1098,11 +1134,11 @@ h3 {
         flex-direction: column;
     }
     .footsteps {
-        margin-right: 0px;
+        margin-right: 0;
         margin-bottom: 20px;
     }
     .walking {
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .tours {
@@ -1113,8 +1149,8 @@ h3 {
     }
     .guidedTour {
         width: 100%;
-        margin-left: 0px;
-              margin-top: 40px;
+        margin-left: 0;
+        margin-top: 40px;
     }
     .guidedTourInfo {
         flex-direction: column;
@@ -1124,8 +1160,8 @@ h3 {
         height: fit-content;
     }
     .guidedTourLeft img {
-    height: auto;
-    width: 100%;
+        height: auto;
+        width: 100%;
     }
 
     footer {
@@ -1134,11 +1170,11 @@ h3 {
     iframe {
         display: none;
     }
-    .footerRight{
+    .footerRight {
         width: 100%;
     }
     .footerRight p {
-        padding-top: 0px;
+        padding-top: 0;
         text-align: center;
     }
-  }
+}
