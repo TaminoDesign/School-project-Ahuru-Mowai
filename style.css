@@ -975,6 +975,12 @@ h3 {
 }
 
 @media (max-width: 600px) {
+    header {
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     h1 {
         font-size: 2.5em;
     }
@@ -1066,6 +1072,60 @@ h3 {
     }
     .iconButton {
         display: none;
+    }
+
+    .sectionOpen {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .sectionOpenLeft {
+        width: 100%;
+    }
+    .sectionOpenRight {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .sectionOpenRight p {
+        text-align: center;
+    }
+
+    .protect h2 {
+        text-align: center;
+    }
+    .protectTiles {
+        flex-direction: column;
+    }
+    .footsteps {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .walking {
+        margin-left: 0px;
+    }
+
+    .tours {
+        flex-direction: column;
+    }
+    .selfTour {
+        width: 100%;
+    }
+    .guidedTour {
+        width: 100%;
+        margin-left: 0px;
+              margin-top: 40px;
+    }
+    .guidedTourInfo {
+        flex-direction: column;
+    }
+    .guidedTourLeft {
+        width: 100%;
+        height: fit-content;
+    }
+    .guidedTourLeft img {
+    height: auto;
+    width: 100%;
     }
 
     footer {
