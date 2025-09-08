@@ -1,21 +1,23 @@
-* {
+* { /* The * means everything. The browser adds padding around objects by default and this removes that. */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body { /* adds a background-color to every page */
     background-color: #2C2C29;
 }
+
 header {
     height: 100dvh;
-    background-image: url("assets/images/heroImage.jpg");
+    background-image: url("assets/images/heroImage.jpg"); /* This is the hero image for the homepage */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+/* The hero images for all the other pages: */
 .headerWildlife {
     background-image: url("assets/images/Robin.jpg");
 }
@@ -28,6 +30,7 @@ header {
     background-image: url("assets/images/VisitBackground.png");
 }
 
+/* This improts both the fonts I'm using */
 @font-face {
     font-family: 'Literata';
     src: url("assets/fonts/Literata-Medium.ttf");
@@ -36,6 +39,7 @@ header {
     font-family: 'Sora';
     src: url("assets/fonts/Sora-Regular.otf");
 }
+/* Styling for all headlines */
 h1 {
     font-family: 'Literata';
     font-size: 5rem;
@@ -45,7 +49,7 @@ h1 {
     text-transform: none;
     font-weight: 400;
 }
-
+/* Styling for all sub-headlines */
 h2 {
     font-family: 'Literata';
     font-size: 2.5rem;
@@ -53,7 +57,7 @@ h2 {
     line-height: 1;
     font-weight: 400;
 }
-
+/* Styling for all h3  */
 h3 {
     font-family: 'Literata';
     font-size: 1rem;
@@ -61,7 +65,7 @@ h3 {
     line-height: 1;
     font-weight: 400;
 }
-
+/* Styling for all paragraphs  */
 p {
     font-family: 'Sora';
     font-size: 1rem;
@@ -69,7 +73,7 @@ p {
     line-height: 1.2;
     text-decoration: none;
 }
-
+/* Styling for all my links  */
 a {
     margin: 0;
     padding: 0;
@@ -77,8 +81,9 @@ a {
     height: auto;
     text-decoration: none;
 }
+/* Styling for the navigation  */
 .nav {
-    position: absolute;
+    position: absolute; /* This positions the navigation at the very top of the page  */
     top: 0px;
     left: 0px;
     display: flex;
@@ -87,12 +92,12 @@ a {
     justify-content: space-between;
     width: 100%;
 }
-
+/* Here I determine the max width of the website to prevent elements from overstretching */
 section {
     max-width: 1280px;
     margin: 0 auto;
 }
-
+/* The positon and size of the logo  */
 .logo {
     padding: 30px;
     border-radius: 0 0 30px 0;
@@ -103,7 +108,7 @@ section {
     width: 100px;
     height: auto;
 }
-
+/* The code for the section behind the navigation buttons  */
 .navbar {
     padding: 30px;
     border-radius: 0 0 0 30px;
@@ -112,7 +117,7 @@ section {
     flex-direction: row;
     text-decoration: none;
 }
-
+/* This is to style all the titles in the hero section of all pages  */
 .heroText {
     position: absolute;
     bottom: 0;
@@ -122,6 +127,7 @@ section {
     background-color: #FFFEE8;
 }
 
+/* Code for the Google Maps embed  */
 #gmap_canvas {
     width: 311px;
     height: 447px;
@@ -129,9 +135,7 @@ section {
     overflow: hidden;    
     display: block;       
 }
-
-    
-
+/* The code for the buttons  */
 .button,
 .iconButton {
     background-color: #FFFEE8;
@@ -146,8 +150,9 @@ section {
     border-radius: 20px;
     text-decoration: none;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* This tells the browser which animation to run */
 }
+/* So all the icons on the buttons are the same size */
 .button img {
     margin-right: 10px;
     height: 20px;
@@ -156,44 +161,49 @@ section {
 .iconButton img {
     height: 20px;
 }
-
+/* Styling for the button text  */
 .button .buttonText {
     font-size: 1rem;
     text-decoration: none;
     margin: 0;
 }
-
+/* This is the animation when you hover over a button  */
 .button:hover,
 .iconButton:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 20px rgb(255, 254, 232);
+    transform: scale(1.02); /* Make the button just a bit bigger */
+    box-shadow: 0 0 20px rgb(255, 254, 232); /* And adds a shadow */ 
 }
-
+/* Creates a visited state for the bird song buttons */
+a.iconButton:visited {
+    color: #000;
+    background-color: #719476;
+}
+/* The active button on every page has a different background colour */
 .active {
     background-color: #B4EDBC;
 }
 
 .sectionWhoWeAre {
-    display: flex;
+    display: flex; /* I'm using a flexbox here so I can have multiple columns */
     flex-direction: row;
 }
-
+/* This is for the second section the about us */
 .sectionWhoWeAreLeft {
-    width: 60%;
+    width: 60%; /* I'm using % so the website is responsive */
     padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
-    background-image: url("assets/images/background.png");
+    background-image: url("assets/images/background.png"); /* The wave background */
     background-position: center;
     background-size: cover;
 }
-
+/* Changing the text colour */
 .sectionWhoWeAreLeft h3 {
     color: #FFFEE8;
 }
-
+/* This is for the image in the about us section */
 .sectionWhoWeAreRight {
     width: 40%;
 }
@@ -204,21 +214,22 @@ section {
     border-radius: 0 0 0 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+/* A small animation when you hover over an image it gets a shadow */
 .sectionWhoWeAreRight img:hover {
     transform: scale(1.001);
     box-shadow: 0 0 200px #fffee83e;
 }
-
+/* Styling for the paragraphs */
 .sectionWhoWeAreLeft p {
     padding-top: 10px;
     color: #FFFEE8;
 }
-
+/* This code is for the card grid at the bottom of the homepage */
 .sectionPages {
     height: 100vh;
     overflow: visible;
 }
+
 .sectionPages h3 {
     margin: 40px;
     height: fit-content;
@@ -231,7 +242,7 @@ section {
     width: 100%;
     height: 85%;
 }
-
+/* The individual boxes or cards */
 .Boxes {
     width: 33.3%;
 }
@@ -240,9 +251,9 @@ section {
     width: 100%;
     height: 100%;
 }
-
+/* This is the card that goes to the Wildlife page */
 .goToWildlifePage {
-    cursor: url('assets/images/cursorGreen.svg'), auto;
+    cursor: url('assets/images/cursorGreen.svg'), auto; /* A custom cursor so the end user knows they can click here */
     background-color: #FFFEE8;
     display: flex;
     flex-direction: column;
@@ -257,12 +268,12 @@ section {
     background-position: center;
     background-size: cover;
 }
-
+/* All cards have this hover effect; they move up a bit and get a shadow */
 .goToWildlifePage:hover {
     transform: translateY(-5px);
     box-shadow: 2px 2px 35px #FFFEE8;
 }
-
+/* This is the card that goes to the Plants page */
 .goToPlantsPage {
     cursor: url('assets/images/cursorWhite.svg'), auto;
     background-color: #B4EDBC;
@@ -283,7 +294,7 @@ section {
     transform: translateY(-5px);
     box-shadow: 0 0 35px #B4EDBC;
 }
-
+/* This is the card that goes to the Visit page */
 .goToVisitPage {
     cursor: url('assets/images/cursorGreen.svg'), auto;
     background-color: #FFFEE8;
@@ -304,7 +315,7 @@ section {
     transform: translateY(-5px);
     box-shadow: -2px -2px 35px #FFFEE8;
 }
-
+/* Making the images in the cards take up all the space  */
 .goToPlantsPage img,
 .goToWildlifePage img {
     width: 100%;
@@ -313,10 +324,10 @@ section {
 .goToVisitPage img {
     width: 70%;
 }
-
+/* Code for the footer */
 footer {
     height: 600px;
-    display: flex;
+    display: flex; /* Again, using a flexbox to create multiple columns */
     flex-direction: row;
     align-items: end;
     justify-content: end;
@@ -346,17 +357,19 @@ footer {
     color: #FFFEE8;
     padding: 40px;
 }
-
+/* The size for the Google maps embed in the footer */
 .footerRight iframe {
     height: 400px;
     width: auto;
     margin-right: 40px;
 }
 
+/* Wildlife page */
+/* The section right under the hero */
 .sectionWildlife {
     display: flex;
     flex-direction: row;
-    background-image: url("assets/images/background.png");
+    background-image: url("assets/images/background.png"); /* the wave background */
     background-position: center;
     background-size: cover;
 }
@@ -378,7 +391,7 @@ footer {
     width: 100%;
     height: auto;
     padding: 40px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* A small animation that make the bird grow a bit bigger on hover */
 }
 
 .sectionWildlifeRight img:hover {
@@ -387,11 +400,11 @@ footer {
 
 .sectionWildlifeLeft p {
     padding-top: 10px;
-    color: #FFFEE8;
+    color: #FFFEE8; /* Making the text white */
 }
 
 .sectionWildlifeLeft h3 {
-    color: #FFFEE8;
+    color: #FFFEE8; /* Making the text white */
 }
 
 /* Walks tabs */
@@ -399,9 +412,9 @@ footer {
     padding: 20px;
     display: none;
 }
-
+/* The tab panel */
 #details label {
-    cursor: pointer;
+    cursor: pointer; /* Make the cursor into the pointer to show that it can be clicked */
     display: inline-block;
     color: #FFFEE8;
     padding: 10px 25px;
@@ -417,7 +430,7 @@ footer {
     display: block;
     clear: both;
 }
-
+/* Hover animation */
 #details label:hover {
     background-color: rgba(255, 255, 255, .6);
     color: #2C2C29;
@@ -486,16 +499,16 @@ footer {
 #details2 > input[id="tab6"]:checked ~ div[id="detail6"] {
     display: block;
 }
-
+/* The first set of birds the robin and the tui */
 .Birds1 {
     width: 100%;
     display: flex;
     flex-direction: row;
     padding: 40px;
 }
-
+/* Code for the smaller box on the left side */
 .robin {
-    width: 33.3%;
+    width: 33.3%; /* make this box 1/3 of the screen size */
     height: fit-content;
     background-color: #FFFEE8;
     display: flex;
@@ -507,7 +520,7 @@ footer {
     margin-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-image: url("assets/images/BackgroundWhite.png");
+    background-image: url("assets/images/BackgroundWhite.png"); /* Wave background */
     background-position: center;
     background-size: cover;
 }
@@ -519,20 +532,20 @@ h3 {
 
 .tui {
     margin-left: 20px;
-    width: 66%;
+    width: 66%; /* Makes this box 2/3 of the screen size */
     height: auto;
     background-color: #B4EDBC;
-    display: flex;
+    display: flex; /* Flexbox */ 
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
     border-radius: 0 30px 30px 0;
-    background-image: url("assets/images/BackgroundGreen.png");
+    background-image: url("assets/images/BackgroundGreen.png"); /* Wave background */
     background-position: center;
     background-size: cover;
 }
-
+/* The left side of the tui card */
 .tuiLeft {
     padding-top: 40px;
     width: 45%;
@@ -542,7 +555,7 @@ h3 {
     justify-content: space-between;
     align-items: center;
 }
-
+/* The right side of the tui card */
 .tuiRight {
     height: 100%;
     width: 55%;
@@ -552,7 +565,7 @@ h3 {
     align-items: end;
     justify-content: space-between;
 }
-
+/* Makes the images take up all the space */
 .robin img,
 .tuiLeft img {
     width: 100%;
@@ -603,7 +616,7 @@ h3 {
 #details3 > input[id="tab9"]:checked ~ div[id="detail9"] {
     display: block;
 }
-
+/* The Tuatara section */
 .birds2 {
     width: 100%;
     display: flex;
@@ -612,7 +625,7 @@ h3 {
 }
 
 .tuatara {
-    width: 100%;
+    width: 100%; /* This section spannes the whole page so 100% */
     height: auto;
     background-color: #FFFEE8;
     display: flex;
@@ -621,11 +634,11 @@ h3 {
     align-items: center;
     text-align: center;
     border-radius: 0 30px 0 30px;
-    background-image: url("assets/images/BackgroundWhite.png");
+    background-image: url("assets/images/BackgroundWhite.png"); /* wave background */
     background-position: center;
     background-size: cover;
 }
-
+/* The text side */
 .tuataraLeft {
     padding: 40px;
     width: 50%;
@@ -635,7 +648,7 @@ h3 {
     justify-content: space-between;
     align-items: center;
 }
-
+/* The side with the image */
 .tuataraRight {
     height: 100%;
     width: 50%;
@@ -741,7 +754,7 @@ h3 {
 #details5 > input[id="tab15"]:checked ~ div[id="detail15"] {
     display: block;
 }
-
+/* The last section with the ruru and hihi birds */
 .Birds3 {
     width: 100%;
     display: flex;
@@ -750,7 +763,7 @@ h3 {
 }
 
 .ruru {
-    width: 33.3%;
+    width: 33.3%; /* The ruru has the smaller section only 1/3 of the screen size */
     height: fit-content;
     background-color: #FFFEE8;
     display: flex;
@@ -762,7 +775,7 @@ h3 {
     margin-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-image: url("assets/images/BackgroundWhite.png");
+    background-image: url("assets/images/BackgroundWhite.png"); /* Wave background */
     background-position: center;
     background-size: cover;
 }
@@ -777,7 +790,7 @@ h3 {
     width: 66%;
     height: auto;
     background-color: #B4EDBC;
-    display: flex;
+    display: flex; /* Using a flexbox to create two columns  */
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -785,7 +798,7 @@ h3 {
     border-radius: 0 0 30px 30px;
     background-image: url("assets/images/BackgroundGreen.png");
     background-position: center;
-    background-size: cover;
+    background-size: cover; /* This makes the wave background fill the whole card */
 }
 
 .hihiLeft {
@@ -807,21 +820,24 @@ h3 {
     align-items: center;
     justify-content: space-between;
 }
-
+/* Makes the images take up all the space */
 .hihiRight img,
 .ruru img {
     width: 100%;
 }
 
+/* Visit page */
+
+/* The opening hours section */
 .sectionOpen {
     display: flex;
     flex-direction: row;
-    height: 70vh;
+    height: 70vh; /* This section will always be 70% of the viewport height */
     background-image: url("assets/images/background.png");
     background-position: center;
     background-size: cover;
 }
-
+/* The times part of the opening hours section */
 .sectionOpenLeft {
     width: 60%;
     padding: 40px;
@@ -830,7 +846,7 @@ h3 {
     align-items: start;
     justify-content: start;
 }
-
+/* The Address part of the opening hours section */
 .sectionOpenRight {
     width: 40%;
     padding: 40px;
@@ -842,26 +858,26 @@ h3 {
 }
 
 .sectionOpenLeft h2 {
-    color: #FFFEE8;
+    color: #FFFEE8; /* Text colour */
     padding-top: 28%;
 }
 
 .sectionOpenLeft h3 {
-    color: #FFFEE8;
+    color: #FFFEE8; /* Text colour */
 }
 
 .sectionOpenRight p {
-    color: #FFFEE8;
+    color: #FFFEE8; /* Text colour */
     padding-bottom: 10px;
 }
-
+/* The section with both tours */
 .tours {
     width: 100%;
     display: flex;
     flex-direction: row;
     padding: 40px;
 }
-
+/* The self guided tour */
 .selfTour {
     width: 33.3%;
     height: fit-content;
@@ -871,9 +887,9 @@ h3 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 0 30px 0 30px;
+    border-radius: 0 30px 0 30px; /* Creates the curved border where some corners are rounded and some are not */
     margin-right: 20px;
-    background-image: url("assets/images/BackgroundWhite.png");
+    background-image: url("assets/images/BackgroundWhite.png"); /* wave background */
     background-position: center;
     background-size: cover;
 }
@@ -885,7 +901,7 @@ h3 {
 .guidedTourRight p {
     padding-top: 10px;
 }
-
+/* The guided tour */
 .guidedTour {
     margin-left: 20px;
     width: 66%;
@@ -912,7 +928,7 @@ h3 {
     background-position: center;
     background-size: cover;
 }
-
+/* The image */
 .guidedTourLeft {
     width: fit-content;
     height: 100%;
@@ -921,7 +937,7 @@ h3 {
     justify-content: space-between;
     align-items: center;
 }
-
+/* The text */
 .guidedTourRight {
     height: 100%;
     width: 100%;
@@ -946,7 +962,7 @@ h3 {
     text-align: left;
     padding-top: 20px;
 }
-
+/* The help us protect native species section */
 .protect {
     display: flex;
     flex-direction: column;
@@ -954,7 +970,7 @@ h3 {
     align-items: center;
     justify-content: center;
 }
-
+/* Text colour */
 .protect h2 {
     color: #FFFEE8;
 }
@@ -964,7 +980,7 @@ h3 {
     flex-direction: row;
     margin-top: 20px;
 }
-
+/* The left protect tile; Take only photographs */
 .footsteps {
     display: flex;
     flex-direction: column;
@@ -978,12 +994,12 @@ h3 {
     margin-right: 20px;
     padding: 20px;
 }
-
+/* So the icons on the protect tiles are the same size */
 .footsteps img {
     height: 30px;
     width: 30px;
 }
-
+/* The right protect tile; keep to walking on the boardwalks */
 .walking {
     display: flex;
     flex-direction: column;
@@ -997,41 +1013,45 @@ h3 {
     margin-left: 20px;
     padding: 20px;
 }
-
+/* So the icons on the protect tiles are the same size */
 .walking img {
     height: 30px;
 }
 
+/* Plants page */
+/* The plants page has two types of images big and small, this is for the big images */
 .treeImageBig {
     width: 100%;
     padding: 20px;
     border-radius: 0 30px 30px 0;
 }
-
+/* And for the samll images */
 .treeImageSmall {
     width: 100%;
     padding: 20px;
     border-radius: 30px 30px 0 0;
 }
 
+/* Responsive design: this code makes the website adapt to mobile devices */
+
 @media (max-width: 600px) {
-    header {
+    header { /* turning off the Parallax scroll for mobile as it doesn't work */
         background-attachment: scroll;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    h1 {
+    h1 { /* Making the font smaller for mobile */
         font-size: 2.5em;
     }
-    .navbar {
+    .navbar { /* Changing the direction of the navigation for mobile */
         flex-direction: column;
     }
     .navbar a {
         margin-top: 10px;
     }
 
-    .sectionWhoWeAre {
+    .sectionWhoWeAre { /* Changing the direction of the about us section for mobile */
         flex-direction: column;
     }
     .sectionWhoWeAreLeft {
@@ -1052,11 +1072,11 @@ h3 {
     .selectPages {
         flex-direction: column;
     }
-    .Boxes {
+    .Boxes { /* Makes the cards on the homepage take up all the width of the screen for mobile */
         width: 100%;
     }
 
-    .sectionWildlife {
+    .sectionWildlife { /* Changing the direction of this section for mobile */
         flex-direction: column;
     }
     .sectionWildlifeLeft {
@@ -1067,13 +1087,13 @@ h3 {
     }
 
     .Birds1,
-    .Birds3 {
+    .Birds3 { /* Changing the direction of the birds section for mobile */
         flex-direction: column;
     }
     .hihi,
     .robin,
     .ruru,
-    .tui {
+    .tui { /* Changing the direction of the birds section for mobile */
         width: 100%;
         flex-direction: column;
     }
@@ -1177,7 +1197,7 @@ h3 {
     footer {
         flex-direction: column;
     }
-    iframe {
+    iframe { /* hides the google maps embed for mobile */
         display: none;
     }
     .footerRight {
