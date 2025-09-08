@@ -79,8 +79,8 @@ a {
 }
 .nav {
     position: absolute;
-    top: 20;
-    left: 20;
+    top: 0px;
+    left: 0px;
     display: flex;
     flex-direction: row;
     align-items: start;
@@ -121,6 +121,16 @@ section {
     border-radius: 0 30px 0 0;
     background-color: #FFFEE8;
 }
+
+#gmap_canvas {
+    width: 311px;
+    height: 447px;
+    border: none;    
+    overflow: hidden;    
+    display: block;       
+}
+
+    
 
 .button,
 .iconButton {
@@ -1178,3 +1188,8 @@ h3 {
         text-align: center;
     }
 }
+
+
+
+
+
