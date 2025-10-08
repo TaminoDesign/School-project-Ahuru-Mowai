@@ -101,7 +101,7 @@ section {
 .logo {
     padding: 30px;
     border-radius: 0 0 30px 0;
-    background-color: #B4EDBC;
+    background-color: #8BBE6A;
 }
 
 .logo img {
@@ -112,7 +112,7 @@ section {
 .navbar {
     padding: 30px;
     border-radius: 0 0 0 30px;
-    background-color: #B4EDBC;
+    background-color: #8BBE6A;
     display: flex;
     flex-direction: row;
     text-decoration: none;
@@ -147,7 +147,7 @@ section {
     justify-content: center;
     margin-left: 5px;
     margin-right: 5px;
-    border-radius: 20px;
+    border-radius: 20px 0px 20px 0px;
     text-decoration: none;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* This tells the browser which animation to run */
@@ -180,7 +180,7 @@ a.iconButton:visited {
 }
 /* The active button on every page has a different background colour */
 .active {
-    background-color: #B4EDBC;
+    background-color: #8BBE6A;
 }
 
 .sectionWhoWeAre {
@@ -276,7 +276,7 @@ a.iconButton:visited {
 /* This is the card that goes to the Plants page */
 .goToPlantsPage {
     cursor: url('assets/images/cursorWhite.svg'), auto;
-    background-color: #B4EDBC;
+    background-color: #8BBE6A;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -292,7 +292,7 @@ a.iconButton:visited {
 
 .goToPlantsPage:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 35px #B4EDBC;
+    box-shadow: 0 0 35px #8BBE6A;
 }
 /* This is the card that goes to the Visit page */
 .goToVisitPage {
@@ -523,6 +523,7 @@ footer {
     background-image: url("assets/images/BackgroundWhite.png"); /* Wave background */
     background-position: center;
     background-size: cover;
+    box-shadow: 0 0 20px rgb(0, 0, 0); /* And adds a shadow */ 
 }
 
 .robin p,
@@ -534,7 +535,7 @@ h3 {
     margin-left: 20px;
     width: 66%; /* Makes this box 2/3 of the screen size */
     height: auto;
-    background-color: #B4EDBC;
+    background-color: #8BBE6A;
     display: flex; /* Flexbox */ 
     flex-direction: row;
     justify-content: center;
@@ -544,6 +545,7 @@ h3 {
     background-image: url("assets/images/BackgroundGreen.png"); /* Wave background */
     background-position: center;
     background-size: cover;
+    box-shadow: 0 0 20px rgb(0, 0, 0); /* And adds a shadow */ 
 }
 /* The left side of the tui card */
 .tuiLeft {
@@ -637,6 +639,7 @@ h3 {
     background-image: url("assets/images/BackgroundWhite.png"); /* wave background */
     background-position: center;
     background-size: cover;
+    box-shadow: 0 0 20px rgb(0, 0, 0); /* And adds a shadow */ 
 }
 /* The text side */
 .tuataraLeft {
@@ -778,6 +781,7 @@ h3 {
     background-image: url("assets/images/BackgroundWhite.png"); /* Wave background */
     background-position: center;
     background-size: cover;
+    box-shadow: 0 0 20px rgb(0, 0, 0); /* And adds a shadow */ 
 }
 
 .ruru p,
@@ -789,7 +793,7 @@ h3 {
     margin-right: 20px;
     width: 66%;
     height: auto;
-    background-color: #B4EDBC;
+    background-color: #8BBE6A;
     display: flex; /* Using a flexbox to create two columns  */
     flex-direction: row;
     justify-content: center;
@@ -799,6 +803,7 @@ h3 {
     background-image: url("assets/images/BackgroundGreen.png");
     background-position: center;
     background-size: cover; /* This makes the wave background fill the whole card */
+    box-shadow: 0 0 20px rgb(0, 0, 0); /* And adds a shadow */ 
 }
 
 .hihiLeft {
@@ -892,6 +897,7 @@ h3 {
     background-image: url("assets/images/BackgroundWhite.png"); /* wave background */
     background-position: center;
     background-size: cover;
+    box-shadow: 0 0 20px rgb(0, 0, 0); /* And adds a shadow */ 
 }
 
 .selfTour p {
@@ -917,7 +923,7 @@ h3 {
 .guidedTourInfo {
     width: 100%;
     height: auto;
-    background-color: #B4EDBC;
+    background-color: #8BBE6A;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -927,6 +933,7 @@ h3 {
     background-image: url("assets/images/BackgroundGreen.png");
     background-position: center;
     background-size: cover;
+    box-shadow: 0 0 20px rgb(0, 0, 0); /* And adds a shadow */ 
 }
 /* The image */
 .guidedTourLeft {
