@@ -9,6 +9,29 @@
     </head>
     <body>
         <header>
+                <div class="overlay" id="overlay"></div>
+    
+    <div class="popup" id="popup">
+        <h2>Info</h2>
+        <p>This is not the real website of an Eco-Sanctuary but a Digital Technology project build for school.</p>
+        <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+
+    <script>
+        window.onload = function() {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('popup').style.display = 'block';
+        };
+
+        function closePopup() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('popup').style.display = 'none';
+        }
+
+        document.getElementById('overlay').onclick = closePopup;
+    </script>
+
+            
             <!--The navigation -->
             <div class="nav">
                 <div class="logo">
